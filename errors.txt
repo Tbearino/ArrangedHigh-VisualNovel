@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 88: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a ' at the end of the first line.)
+        Teach "Due to unforeseen circumstances, %(mcname)s has been graciously entrusted to our care here at Arranged High."'
+
+Ren'Py Version: Ren'Py 8.1.1.23060707
+Fri Jul 14 17:23:42 2023

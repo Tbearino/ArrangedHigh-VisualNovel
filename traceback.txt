@@ -1,0 +1,36 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 86, in script
+    Teach "Ahh! %(mcname)s , right. So,..Everyone, I want you to meet our newest addition to the class, %(mcname)s's. They hail from the prestigious [Name of Previous School], where they demonstrated exceptional academic prowess and a genuine passion for learning. Due to unforeseen circumstances, %(mcname)s has been graciously entrusted to our care here at [Current School]. Let's give them a warm welcome and show them the same support and camaraderie that defines our school community."
+KeyError: 'Name of Previous School'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 86, in script
+    Teach "Ahh! %(mcname)s , right. So,..Everyone, I want you to meet our newest addition to the class, %(mcname)s's. They hail from the prestigious [Name of Previous School], where they demonstrated exceptional academic prowess and a genuine passion for learning. Due to unforeseen circumstances, %(mcname)s has been graciously entrusted to our care here at [Current School]. Let's give them a warm welcome and show them the same support and camaraderie that defines our school community."
+  File "D:\ProgramData\renpy-8.1.1-sdk\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\ProgramData\renpy-8.1.1-sdk\renpy\exports.py", line 1473, in say
+    who(what, *args, **kwargs)
+  File "D:\ProgramData\renpy-8.1.1-sdk\renpy\character.py", line 1337, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "D:\ProgramData\renpy-8.1.1-sdk\renpy\character.py", line 1251, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "D:\ProgramData\renpy-8.1.1-sdk\renpy\character.py", line 1231, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "D:\ProgramData\renpy-8.1.1-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
+  File "D:\ProgramData\renpy-8.1.1-sdk\renpy\substitutions.py", line 168, in get_field
+    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 227, in get_value
+KeyError: 'Name of Previous School'
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.1.1.23060707
+ArrangedHigh 1.0
+Fri Jul 14 17:19:31 2023
